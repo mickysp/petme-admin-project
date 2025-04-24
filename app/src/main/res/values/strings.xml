@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string-array name="districtArray">
+        <item>ในเมือง</item>
+        <item>โนนม่วง</item>
+        <item>ศิลา</item>
+        <item>สำราญ</item>
+        <item>บ้านเป็ด</item>
+    </string-array>
+</resources>
