@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ยินดีต้อนรับ"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="แอดมิน"
+            android:textColor="#CA7E0B"
+            android:layout_toRightOf="@id/welcome"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="สวัสดี"
+        android:textColor="@color/black"
+        android:layout_below="@id/head"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/adminName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lalisa Manobal"
+        android:textColor="@color/black"
+        android:layout_below="@id/hello"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/adminName"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeePost"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_admin"
+        android:drawableLeft="@drawable/ic_post"
+        android:text="   โพสต์ทั้งหมด"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeeVerify"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSeePost"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_admin"
+        android:drawableLeft="@drawable/ic_verify"
+        android:text="   อนุมัติการยืนยันตัวตน"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeeDonate"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSeeVerify"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_admin"
+        android:drawableLeft="@drawable/ic_donate"
+        android:text="   ตรวจสอบยอดบริจาค"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/logoutAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/petme"
+        android:src="@drawable/ic_logoutadmin" />
+
+
+</RelativeLayout>
