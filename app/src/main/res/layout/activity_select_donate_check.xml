@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".selectDonateCheck">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รวม"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Money"
+            android:textStyle="bold"
+            android:textColor="#34CC55"
+            android:textSize="40sp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="บาท"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lessThan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:textSize="20sp"
+            android:text="ยอดบริจาคน้อยกว่า 500 บาท"
+            android:textColor="@color/petme"
+            android:background="@color/yellowsoft"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/moreThan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:textSize="20sp"
+            android:text="ยอดบริจาคมากกว่า 500 บาท"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:background="@color/petme"/>
+    </LinearLayout>
+
+
+</LinearLayout>

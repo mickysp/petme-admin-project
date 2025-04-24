@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    tools:context=".selectPost">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/petAddPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เพิ่มโพสต์"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/petme"
+        android:layout_marginTop="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/petNoIsadopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ยังไม่ถูกรับเลี้ยง"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_marginTop="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/petIsadopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ถูกรับเลี้ยงแล้ว"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
